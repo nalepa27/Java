@@ -59,7 +59,14 @@ public class zadania2 {
         System.out.print("uzytkowniku 3 podaj swoj wiek: ");
         int age3 = x.nextInt();
 
-
+        if((age1 > age2) && (age1 > age3)){
+            System.out.println("........");
+            if (age1 >= 18){
+                System.out.println(name1 + " osoba jest pelnoletnia");
+            }
+            else if((age1 < 18)&&(age1 > 10)){
+                System.out.println("osoba jest nastolatkiem");
+            }
         }
 
     }
