@@ -46,31 +46,54 @@ public class zadania2 {
     }
     public static void zadanie3() {
         Scanner x = new Scanner(System.in);
-        System.out.print("uzytkowniku 1 podaj swoje imie: ");
+        System.out.print("user 1 podaj swoje imie: ");
         String name1 = x.nextLine();
-        System.out.print("uzytkowniku 2 podaj swoje imie: ");
+        System.out.print("user 2 podaj swoje imie: ");
         String name2 = x.nextLine();
-        System.out.print("uzytkowniku 3 podaj swoje imie: ");
+        System.out.print("user 3 podaj swoje imie: ");
         String name3 = x.nextLine();
-        System.out.print("uzytkowniku 1 podaj swoj wiek: ");
+        System.out.print("user 1 podaj swoj wiek: ");
         int age1 = x.nextInt();
-        System.out.print("uzytkowniku 2 podaj swoj wiek: ");
+        System.out.print("user 2 podaj swoj wiek: ");
         int age2 = x.nextInt();
-        System.out.print("uzytkowniku 3 podaj swoj wiek: ");
+        System.out.print("user 3 podaj swoj wiek: ");
         int age3 = x.nextInt();
 
         if((age1 > age2) && (age1 > age3)){
-            System.out.println("........");
-            if (age1 >= 18){
-                System.out.println(name1 + " osoba jest pelnoletnia");
+            System.out.println(name1 + " jest najstarsza osoba");
+            if ((age1 > 17)&&(age1 <71)){
+                System.out.println(name1 + " to dorosla osoba");
             }
             else if((age1 < 18)&&(age1 > 10)){
-                System.out.println("osoba jest nastolatkiem");
+                System.out.println(name1 + " to nastolatek");
+            }
+            else if((age1 >= 0 )&&(age1 < 11)){
+                System.out.println(name1 + " to dziecko");
+            }
+            else if(age1 > 70){
+                System.out.println(name1 + " to emeryt/ka");
             }
         }
 
+        if((age1 < age2)&&(age1 < age3)) {
+            System.out.println(name1 + " jest najmlodsza osoba");
+            if (age1 >= 18){
+                System.out.println(name1 + " to dorosla osoba");
+            }
+            else if((age1 < 18)&&(age1 > 10)){
+                System.out.println(name1 + " to nastolatek");
+            }
+            else if((age1 >= 0 )&&(age1 <= 10)){
+                System.out.println(name1 + " to dziecko");
+            }
+            else if(age1 >= 71){
+                System.out.println(name1 + " to emeryt/ka");
+            }
+            else if(age1 < 0){
+                System.out.println(name1 + " jeszcze sie nie urodzil");
+            }
+
+        }
     }
-     /*   System.out.println("The length of the String \""+name1+"\" is: " +length1);
-        System.out.println("The length of the String \""+name2+"\" is: " +length2);*/
 
 }
