@@ -58,7 +58,7 @@ public class zadania2 {
         int age2 = x.nextInt();
         System.out.print("user 3 podaj swoj wiek: ");
         int age3 = x.nextInt();
-
+//user1 - starszy
         if((age1 > age2) && (age1 > age3)){
             System.out.println(name1 + " jest najstarsza osoba");
             if ((age1 > 17)&&(age1 <71)){
@@ -74,7 +74,7 @@ public class zadania2 {
                 System.out.println(name1 + " to emeryt/ka");
             }
         }
-
+// user1 - mlodszy
         if((age1 < age2)&&(age1 < age3)) {
             System.out.println(name1 + " jest najmlodsza osoba");
             if (age1 >= 18){
@@ -89,11 +89,72 @@ public class zadania2 {
             else if(age1 >= 71){
                 System.out.println(name1 + " to emeryt/ka");
             }
-            else if(age1 < 0){
-                System.out.println(name1 + " jeszcze sie nie urodzil");
-            }
-
         }
+//user2 - starszy
+        if((age2 > age1) && (age2 > age3)){
+            System.out.println(name2 + " jest najstarsza osoba");
+            if ((age2 > 17)&&(age2 <71)){
+                System.out.println(name2 + " to dorosla osoba");
+            }
+            else if((age2 < 18)&&(age2 > 10)){
+                System.out.println(name2 + " to nastolatek");
+            }
+            else if((age2 >= 0 )&&(age2 < 11)){
+                System.out.println(name2 + " to dziecko");
+            }
+            else if(age2 > 70){
+                System.out.println(name2 + " to emeryt/ka");
+            }
+        }
+// user2 - mlodszy
+        if((age2 < age1)&&(age2 < age3)) {
+            System.out.println(name2 + " jest najmlodsza osoba");
+            if ((age2 > 17)&&(age2 <71)){
+                System.out.println(name2 + " to dorosla osoba");
+            }
+            else if((age2 < 18)&&(age2 > 10)){
+                System.out.println(name2 + " to nastolatek");
+            }
+            else if((age2 >= 0 )&&(age2 < 11)){
+                System.out.println(name2 + " to dziecko");
+            }
+            else if(age2 > 70){
+                System.out.println(name2 + " to emeryt/ka");
+            }
+        }
+//user3 - starszy
+        if((age3 > age1) && (age3 > age2)){
+            System.out.println(name3 + " jest najstarsza osoba");
+            if ((age3 > 17)&&(age3 <71)){
+                System.out.println(name3 + " to dorosla osoba");
+            }
+            else if((age3 < 18)&&(age3 > 10)){
+                System.out.println(name3 + " to nastolatek");
+            }
+            else if((age3 >= 0 )&&(age3 < 11)){
+                System.out.println(name3 + " to dziecko");
+            }
+            else if(age3 > 70){
+                System.out.println(name3 + " to emeryt/ka");
+            }
+        }
+// user3 - mlodszy
+        if((age3 < age1)&&(age3 < age2)) {
+            System.out.println(name3 + " jest najmlodsza osoba");
+            if ((age3 > 17)&&(age3 <71)){
+                System.out.println(name3 + " to dorosla osoba");
+            }
+            else if((age3 < 18)&&(age3 > 10)){
+                System.out.println(name3 + " to nastolatek");
+            }
+            else if((age3 >= 0 )&&(age3 < 11)){
+                System.out.println(name3 + " to dziecko");
+            }
+            else if(age3 > 70){
+                System.out.println(name3 + " to emeryt/ka");
+            }
+        }
+
     }
 
 }
